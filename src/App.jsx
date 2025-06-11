@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
 import Navbar from './components/Navbar'
 import Sidebar from './components/Sidebar'
-import Home from './components/pages/Home'
+import Home from './pages/Home'
 import { Route, Routes } from 'react-router-dom'
-import Video from './components/pages/Video'
+import Video from './pages/Video'
 
 const App = () => {
 

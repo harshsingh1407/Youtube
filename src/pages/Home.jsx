@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
-import Sidebar from '../Sidebar'
-import Feed from '../feed'
+import Sidebar from '../components/Sidebar'
+import Feed from '../components/Feed'
 
 const Home = ({open}) => {
 
