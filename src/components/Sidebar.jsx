@@ -11,7 +11,7 @@ const Sidebar = ({ open, category, setcategory }) => {
   };
 
   return (
-    <div className={`hidden md:block fixed left-0 top-[60px] bg-black h-[calc(100vh-60px)] text-white z-50 transition-all duration-300 ${open ? "w-[250px]" : "w-[80px]"}`}>
+    <div className={`hidden md:block fixed left-0 top-[60px] bg-black h-[calc(100vh-60px)] text-white  ${open ? "w-[250px]" : "w-[80px]"}`}>
       <ul>
         <li onClick={() => handleClick(0)} className="text-xl py-3 px-7 cursor-pointer hover:bg-gray-800">
           <i className="fa-solid fa-house"></i>

@@ -26,7 +26,7 @@ const Feed = ({ category }) => {
   }, [category])
 
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-4">
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-3">
       {data.length === 0 && <p className="text-white">No videos found for this category.</p>}
       {data.map((item, index) => (
         <Link
