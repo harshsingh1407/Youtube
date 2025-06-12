@@ -11,25 +11,25 @@ const Sidebar = ({ open, category, setcategory }) => {
   };
 
   return (
-    <div className={`hidden md:block fixed left-0 top-[60px] bg-black h-[calc(100vh-60px)] text-white  ${open ? "w-[250px]" : "w-[80px]"}`}>
+    <div className={`hidden md:block fixed left-0 top-[60px] bg-[#0f0f0f] h-[calc(100vh-60px)] text-white  ${open ? "w-[250px]" : "w-[80px]"}`}>
       <ul>
-        <li onClick={() => handleClick(0)} className="text-xl py-3 px-7 cursor-pointer hover:bg-gray-800">
+        <li onClick={() => handleClick(0)} className={`text-xl py-3 px-7 cursor-pointer hover:bg-gray-800 ${category===0?"bg-gray-800":""}`}>
           <i className="fa-solid fa-house"></i>
           <span className={`px-2 ${open ? "" : "hidden"}`}>Home</span>
         </li>
-        <li onClick={() => handleClick(20)} className="text-xl py-3 px-7 cursor-pointer hover:bg-gray-800">
+        <li onClick={() => handleClick(20)} className={`text-xl py-3 px-7 cursor-pointer hover:bg-gray-800 ${category===20?"bg-gray-800":""}`}>
           <i className="fa-solid fa-gamepad"></i>
           <span className={`px-2 ${open ? "" : "hidden"}`}>Gaming</span>
         </li>
-        <li onClick={() => handleClick(25)} className="text-xl py-3 px-7 cursor-pointer hover:bg-gray-800">
+        <li onClick={() => handleClick(25)} className={`text-xl py-3 px-7 cursor-pointer hover:bg-gray-800 ${category===25?"bg-gray-800":""}`}>
           <i className="fa-solid fa-newspaper"></i>
           <span className={`px-2 ${open ? "" : "hidden"}`}>News</span>
         </li>
-        <li onClick={() => handleClick(10)} className="text-xl py-3 px-7 cursor-pointer hover:bg-gray-800">
+        <li onClick={() => handleClick(10)} className={`text-xl py-3 px-7 cursor-pointer hover:bg-gray-800 ${category===10?"bg-gray-800":""}`}>
           <i className="fa-solid fa-music"></i>
           <span className={`px-2 ${open ? "" : "hidden"}`}>Music</span>
         </li>
-        <li onClick={() => handleClick(17)} className="text-xl py-3 px-7 cursor-pointer hover:bg-gray-800">
+        <li onClick={() => handleClick(17)} className={`text-xl py-3 px-7 cursor-pointer hover:bg-gray-800 ${category===17?"bg-gray-800":""}`}>
           <i className="fa-solid fa-medal"></i>
           <span className={`px-2 ${open ? "" : "hidden"}`}>Sports</span>
         </li>
